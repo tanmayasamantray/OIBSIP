@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to left bottom, #ff92f8, #9ba1ff);
+    margin: 0;
+    min-width: 250px;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    margin: 0px 100px 0px 100px;
+    padding: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #d0d0d0;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li:nth-child(odd) {
+    background: #e8e8e8;
+}
+ul li:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+ul li:hover {
+    background: #b6b6b6;
+}
+ul li.checked {
+    background: #09bf06;
+    color: #012f46;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 30px 12px 30px;
+}
+.close:hover {
+    background-color: #c00d00;
+    color: #ffffff;
+}
+.titlebar {
+    background-color: #003550;
+    margin: 100px 100px 0px 100px;
+    padding: 30px 40px;
+    color: #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+.titlebar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input {
+    margin: 0;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+.addItem {
+    padding: 10px;
+    width: 25%;
+    background: #d2ffce;
+    color: #343434;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0px 10px 10px 0px;
+}
+.addItem:hover {
+    background-color: #09bf06;
+}
